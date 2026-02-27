@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Aclonica&family=Adamina&family=Afacad:ital,wght@0,400..700;1,400..700&family=Alkalami&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Henny+Penny&family=Imprima&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Langar&family=Patua+One&family=Rakkas&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Aclonica&family=Adamina&family=Afacad:ital,wght@0,400..700;1,400..700&family=Alkalami&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Hammersmith+One&family=Henny+Penny&family=Imprima&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Langar&family=Patua+One&family=Rakkas&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Hammersmith One;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 50px;
+    background: linear-gradient(to right, #BB060B, #78080E);
+    width: 93%;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 510px;
+}
+
+header .main_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+header::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid #BB060B;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
+    rotate: -90deg;
+    position: absolute;
+    top: -14px;
+    left: -69px;
+}
+
+header .main_icons i {
+    color: white;
+    font-size: 2rem;
+}
+
+header .darkMenu_icon i {
+    font-size: 2rem;
+}
+
+.body_apresConn {
+    background: #ffffff;
+}
+
+.body_apresConn .logo {
+    margin-top: 50px;
+}
+
+.body_apresConn .logo .logo_imgs div {
+    width: 27%;
+}
+
+.body_apresConn .logo .logo_imgs div img {
+    width: 50%;
+}
+
+.body_apresConn .logo .logo_imgs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+    flex-direction: column;
+}
+
+.body_apresConn .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.body_apresConn .logo .logo_imgs .second_img {
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.body_apresConn .logo .logo_imgs .second_img p {
+    font-size: 1.3rem;
+    color: #BB060B;
+    font-family: Grandstander;
+    font-weight: bold;
+}
+
+.body_apresConn .logo .logo_imgs .second_img p span {
+    color: #000000;
+}
+
+.body_apresConn header .main_icons .active {
+    border-bottom: 3px solid #ffffff;
+    padding: 9px 0;
+}
+
+main .bienvenue_partie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0 30px 0;
+    gap: 150px;
+}
+
+.bienvenue_partie_img {
+    width: 13%;
+    height: 190px;
+    border: 2px solid #78080E;
+    border-radius: 9px;
+    box-shadow: 0 7px 12px 4px #BB060B;
+    transform: rotate(135deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 7px 19px #BB060B;
+}
+
+.bienvenue_partie_img .bienvenue_partie_img_cont {
+    width: 60%;
+    transform: rotate(-135deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bienvenue_partie_img .bienvenue_partie_img_cont img {
+    width: 85%;
+    border-radius: 50%;
+
+}
+
+.bienvenue_partie_msg {
+    width: 37%;
+    font-size: 1.1rem;
+}
+
+.bienvenue_partie_msg span {
+    color: #BB060B;
+}
+
+.section_colocations {
+    margin: 150px 0;
+}
+
+.section_colocations .section_titres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_colocations .section_titres h2 {
+    color: #BB060B;
+    font-size: 2.1rem;
+    font-family: Hammersmith One;
+    border-bottom: 3px solid #BB060B;
+    margin: 35px 0;
+}
+
+.section_colocations .colocation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #78080E;
+    padding: 13px 35px;
+    border-radius: 7px;
+    margin: 15px 0;
+}
+
+.section_colocations .colocation h4 {
+    color: #BB060B;
+}
+
+.section_colocations .colocation .btns_colocation i {
+    color: #78080E;
+    font-size: 1.3rem;
+}
+
+.section_colocations .colocation p {
+    font-size: .9rem;
+}
+
+.section_colocations .colocation .btns_colocation a {
+    padding: 0 5px;
+}
+
+.section_colocations .section_titres button {
+    background: linear-gradient(to right, #BB060B, #78080E);
+    color: #ffffff;
+    padding: 13px 37px;
+    font-size: 1.1rem;
+    border-radius: 7px;
+    border: none;
+}
+
+.section_colocations {
+    margin: 150px 50px;
+}
+
+.modal_ajout_colocation .btn_fermer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #BB060B;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 7px;
+    font-size: 1.3rem;
+    border-bottom-left-radius: 7px;
+
+}
+
+.modal_ajout_colocation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.ajout_colocation {
+    display: none;
+}
+
+
+.modal_ajout_colocation form {
+    border: 2px solid #78080E;
+    padding: 15px 50px;
+    border-radius: 9px;
+    position: relative;
+    width: 50%;
+    background: #ffffff;
+}
+
+.modal_ajout_colocation form .champ1_register label {
+    width: 80%;
+    color: #BB060B;
+}
+
+.modal_ajout_colocation form .champ1_register input[type="radio"] {
+    width: fit-content;
+}
+
+.modal_ajout_colocation form .champ1_register i {
+    color: #78080E;
+    margin: 0 11px;
+    font-size: 1.3rem;
+}
+
+.modal_ajout_colocation form .champ1_register {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #78080E;
+    margin: 25px 0;
+    padding: 15px;
+    border-radius: 7px;
+
+}
+
+.modal_ajout_colocation form input {
+    width: 100%;
+    padding: 11px;
+    margin: 13px 0;
+    border: 1px solid #BB060B;
+    border-radius: 7px;
+}
+
+.modal_ajout_colocation form input:focus {
+    outline: 2px solid #78080E;
+}
+
+.modal_ajout_colocation form input::placeholder,
+.contenair_main .main_form textarea::placeholder {
+    color: #78080E;
+    font-size: .7rem;
+    opacity: .7;
+}
+
+.modal_ajout_colocation form .titre_form {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #BB060B;
+    padding-bottom: 10px;
+    color: #BB060B;
+    font-weight: 600;
+    margin-bottom: 25px;
+    width: fit-content;
+}
+
+.modal_ajout_colocation form .btn_champ1_modal input {
+    background: linear-gradient(to right, #BB060B, #78080E);
+    color: #ffffff;
+}
+
+.modal_ajout_membre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal_ajout_membre form {
+    border: 2px solid #78080E;
+    padding: 15px 50px;
+    border-radius: 9px;
+    position: relative;
+    width: 50%;
+    background: #ffffff;
+}
+
+.modal_ajout_membre .btn_fermer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #BB060B;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 7px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 7px;
+}
+.details_membres{
+    border: none;
+    background: transparent;
+}
+
+.modal_ajout_membre form .titre_form {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #BB060B;
+    padding-bottom: 10px;
+    color: #BB060B;
+    font-weight: 600;
+    margin-bottom: 25px;
+    width: fit-content;
+}
+
+.modal_ajout_membre form input[type="email"] {
+    width: 100%;
+    padding: 11px;
+    margin: 13px 0;
+    border: 1px solid #BB060B;
+    border-radius: 7px;
+}
+
+.modal_ajout_membre form input[type="email"]:focus {
+    outline: 2px solid #78080E;
+}
+
+.modal_ajout_membre form input[type="submit"] {
+    background: linear-gradient(to right, #BB060B, #78080E);
+    color: #ffffff;
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal_ajout_membre .contenair_form_inputs {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+.modal_ajout_membre .contenair_form_inputs .champ1_modal {
+    width: 90%;
+}
+
+.search {
+    width: 60%;
+    position: relative;
+}
+
+.search input {
+    width: 50%;
+    padding: 7px 55px;
+    border: 2px solid #BB060B;
+    border-radius: 7px;
+}
+
+.search input::placeholder {
+    color: #78080e82;
+}
+
+.search i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #78080E;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: yellow;
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+
+.bienvenue_partie_img .ajouter_relation {
+    background: linear-gradient(to right, #BB060B, #78080E);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s all ease-in-out;
+}
+.bienvenue_partie_img .ajouter_relation  p{
+    rotate: -135deg;
+}
+
+.bienvenue_partie_img .ajouter_relation:hover {
+    background: #ffffff;
+    color: #78080E;
+    border: 2px solid #BB060B;
+    cursor: pointer;
+}
+
+.section_membres {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.notification_modal {
+    border: 2px solid #78080E;
+    border-radius: 5px;
+    width: 37%;
+    font-size: .75rem;
+    position: absolute;
+    top: 55px;
+    right: 13%;
+    background-color: #ffffff;
+    display: none;
+}
+
+.notification_modal .notification {
+    width: 100%;
+    border-top: 1px solid #78080E;
+    border-bottom: 1px solid #78080E;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.notification_modal .notification span {
+    align-self: flex-end;
+    font-size: .6rem;
+    opacity: .7;
+}
+
+.notification_modal .notification:nth-child(even) {
+    background: linear-gradient(to right, #BB060B, #78080E);
+    color: #ffffff;
+}
+
+.modal_details_membre .titre_form {
+    width: 100%;
+
+}
+
+.modal_details_membre form {
+    height: 470px;
+    margin: 130px 0;
+    width: 70%;
+}
+
+.modal_details_membre .bienvenue_partie_img {
+    width: 190px;
+    height: 190px;
+    border: 2px solid #78080E;
+    border-radius: 9px;
+    box-shadow: 0 7px 12px 4px #BB060B;
+    transform: rotate(135deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 7px 19px #BB060B;
+    margin: 60px;
+}
+
+.modal_details_membre .bienvenue_partie_img .bienvenue_partie_img_cont {
+    width: 100%;
+    transform: rotate(-135deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_rate {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.profile_rate .stars i {
+    font-size: 2rem;
+}
+
+.profile_rate p {
+    font-size: 1.1rem;
+}
+
+.contenair_details_infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

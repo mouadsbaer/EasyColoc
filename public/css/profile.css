@@ -1,0 +1,146 @@
+.logo_top_right {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.contenair_middle::before {
+    rotate: 90deg;
+    left: 110px;
+    border-bottom: 350px solid #78080E;
+}
+
+.contenair_profile {
+    width: 74%;
+}
+
+.contenair_main_profile .profile_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    z-index: -1;
+    padding: 0;
+}
+
+.contenair_main_profile .profile_img div {
+    width: 100%;
+    height: 100%;
+}
+
+.contenair_main_profile .profile_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+/* Camera hover overlay */
+.profile_img {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.camera_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /* Added for visibility */
+}
+
+
+.profile_img:hover .camera_overlay {
+    opacity: 1;
+}
+
+.profile_img:hover img {
+    filter: brightness(0.5);
+    transition: filter 0.3s ease;
+}
+
+.contenair_main_profile .contenair_top_profile {
+    margin: 50px 0;
+    gap: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contenair_main_profile .contenair_top_profile button {
+    border: none;
+    background: transparent;
+}
+
+.contenair_main_profile .contenair_top_profile i {
+    color: #78080E;
+    font-size: 1.3rem;
+}
+
+.champs {
+    margin-top: 110px;
+}
+
+.champs,
+.infos_profile {
+    margin-left: 20px;
+}
+
+.commission {
+    border-bottom: 2px solid #78080e9b;
+    padding-bottom: 15px;
+}
+
+.profile_stats_left {
+    position: absolute;
+    left: 10px;
+    /* Positions it inside the red triangle, moved 250px to the right */
+    top: 55%;
+    transform: translateY(-50%);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    z-index: 50;
+    color: #ffffff;
+}
+
+.profile_stats_left .stat_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.profile_stats_left .stat_item i {
+    font-size: 1.6rem;
+    min-width: 35px;
+    text-align: center;
+}
+
+.profile_stats_left .stars {
+    display: flex;
+    gap: 6px;
+    color: #ffc107;
+}
+
+.profile_stats_left span {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.5px;
+}

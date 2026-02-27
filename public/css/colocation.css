@@ -1,0 +1,232 @@
+.statistiques .deux_stats {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+}
+
+.statistiques .deux_stats .stat {
+    border: 2px solid #BB060B;
+    margin: 15px 0;
+    padding: 15px;
+    width: 325px;
+    border-radius: 11px;
+}
+
+.statistiques .deux_stats .stat h4 {
+    font-size: 1.7rem;
+    margin: 15px 0;
+    color: #BB060B;
+}
+
+.statistiques .deux_stats .stat p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.statistiques .deux_stats .stat .circle_stat {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 15px solid #BB060B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BB060B;
+}
+
+.statistiques .deux_stats .stat .collection_stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistiques .deux_stats .stat_colore {
+    background: linear-gradient(to right, #BB060B, #78080E);
+    color: #ffffff;
+}
+
+.statistiques .deux_stats .stat_colore .circle_stat {
+    color: #ffffff;
+    border: 15px solid #ffffff;
+}
+
+.statistiques .deux_stats .stat_colore h4 {
+    color: #ffffff;
+}
+
+.graphe .circle_graphe {
+    width: 210px;
+    height: 210px;
+    background: #ffffff;
+    border: 25px solid #BB060B;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_apresConn {
+    overflow-y: visible;
+}
+
+.stats {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 100px 50px;
+    gap: 150px;
+}
+
+.section_colocations_categories .categories .colocation {
+    width: 90%;
+}
+
+.section_colocations_categories .categories .colocation .btns_colocation .pay_btn {
+    background: linear-gradient(to right, #BB060B, #78080E);
+    color: #ffffff;
+    padding: 7px 17px;
+    border-radius: 5px;
+}
+
+.section_colocations_categories .categories .colocation .btns_colocation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9px;
+}
+
+.details_cat , #ajouter_membre{
+    border: none;
+    background: transparent;
+    padding: 5px 5px;
+    transition: .3s all ease-in-out;
+}
+
+.details_cat:hover, #ajouter_membre:hover {
+    border: 2px solid #78080E;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.section_colocations_categories .membres .membre .img_membre {
+    width: 10%;
+}
+
+.section_colocations_categories .membres .membre .img_membre img {
+    width: 60%;
+}
+
+.section_colocations_categories .membres .membre {
+    padding: 5px 15px;
+    width: 90%;
+}
+
+.modal_details_cat .cat_infos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .9rem;
+    gap: 90px;
+
+}
+
+.modal_details_cat .cat_infos .row1 p,
+.flex_item p {
+    color: #BB060B;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.modal_details_cat .cat_infos .row1 div,
+.flex_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 9px;
+    margin: 11px 0;
+}
+
+.modal_details_cat .cat_infos .row1 {
+    width: 50%;
+}
+
+.modal_details_cat .cat_infos .row1 .membres_imgs {
+    width: 20%;
+}
+
+.modal_details_cat .cat_infos .row1 .membres_imgs img {
+    width: 50%;
+}
+
+.modal_details_cat .cat_infos .row2 button {
+    border: 2px solid #78080E;
+    padding: 0 5px;
+    border-radius: 5px;
+    background: transparent;
+    color: #78080E;
+    font-size: 1.3rem;
+    transition: .3s all ease-in-out;
+}
+
+.modal_details_cat .cat_infos .row2 button:hover {
+    background: #78080E;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.modal_details_cat .cat_infos .row2 .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+.modal_depenses_cat {
+    width: 40%;
+    border: 2px solid #BB060B;
+    border-radius: 5px;
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    background: #ffffff;
+}
+
+.section_colocations_categories {
+    position: relative;
+    gap: 90px;
+
+}
+
+.modal_depenses_cat .depense {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px;
+    border-bottom: 2px solid #78080E;
+}
+
+.modal_depenses_cat .depense h4 {
+    color: #BB060B;
+}
+
+.modal_depenses_cat .depense a {
+    background-color: #BB060B;
+    padding: 3px 10px;
+    color: #ffffff;
+    border-radius: 50%;
+
+}
+
+.modal_nouvelle_depense {
+    display: none;
+}
+
+#container_not_circle {
+    border-radius: 11px !important;
+    width: 400px !important;
+    padding: 10px;
+    border: none !important;
+}

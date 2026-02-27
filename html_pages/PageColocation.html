@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil - EcoColoc</title>
+    <link rel="stylesheet" href="css/Dash.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/colocation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body class="body_apresConn">
+    <header>
+        <div class="main_icons">
+            <div><a href="#" class="active"><i class="fa-solid fa-house"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-users"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-bell"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-circle-user"></i></a></div>
+        </div>
+        <div class="darkMenu_icon">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </header>
+    <div class="logo">
+        <div class="logo_imgs">
+            <div><img src="imgs/logo_projet2.png" alt=""></div>
+            <div class="second_img"><img src="imgs/logo_projet.png" alt="">
+                <p>Easy<span>CoLoc</span></p>
+            </div>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Chercher Une Collocation">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <main>
+        <section class="statistiques">
+            <div class="stats">
+                <div>
+                    <div class="deux_stats">
+                        <div class="stat">
+                            <h4>Montant Total</h4>
+                            <div class="collection_stat">
+                                <p>354</p>
+                                <div class="circle_stat">50%</div>
+                            </div>
+                        </div>
+                        <div class="stat stat_colore">
+                            <h4>Montant Total</h4>
+                            <div class="collection_stat">
+                                <p>354</p>
+                                <div class="circle_stat">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deux_stats">
+                        <div class="stat stat_colore">
+                            <h4>Montant Total</h4>
+                            <div class="collection_stat">
+                                <p>354</p>
+                                <div class="circle_stat">50%</div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <h4>Montant Total</h4>
+                            <div class="collection_stat">
+                                <p>354</p>
+                                <div class="circle_stat">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="graphe">
+
+                    <div class="circle_graphe"><canvas id="graph_comp"></canvas></div>
+                    <div class="circle_graphe" id="container_not_circle"><canvas id="graph_not_circle"></canvas></div>
+                </div>
+            </div>
+        </section>
+        <section class="section_colocations section_colocations_categories">
+            <div class="modal_depenses_cat">
+                <div class="depense">
+                    <h4>Dépense 1</h4>
+                    <p>100 $</p>
+                    <div><a href="#">i</a></div>
+                </div>
+                <div class="depense">
+                    <h4>Dépense 1</h4>
+                    <p>100 $</p>
+                    <div><a href="#">i</a></div>
+                </div>
+                <div class="depense">
+                    <h4>Dépense 1</h4>
+                    <p>100 $</p>
+                    <div><a href="#">i</a></div>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="section_titres">
+                    <h2>Les Catégories</h2>
+                </div>
+                <div class="colocation">
+                    <h4>Colocation Titre</h4>
+                    <p>Date de création</p>
+                    <p>amount Total</p>
+                    <div class="btns_colocation">
+                        <a href="#" class="pay_btn">Payer</a>
+                        <button class="details_cat" id="details_cat"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="membres">
+                <div class="section_titres">
+                    <h2>Les Membres</h2>
+                </div>
+                <div class="colocation membre">
+                    <div class="img_membre"><img src="imgs/profile.jpg" alt=""></div>
+                    <h4>UserName</h4>
+                    <p>Payed or not</p>
+                    <div class="btns_colocation">
+                        <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <button id="details_cat" class="details_cat"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <div class="modal_ajout_colocation modal_details_cat" id="modal_details_cat">
+            <form action="#" method="post">
+                <div class="titre_form"> Détails de Catégorie</div>
+                <div class="cat_infos">
+                    <div class="row1">
+                        <div>
+                            <p>Titre : </p><span>éléctricité</span>
+                        </div>
+                        <div>
+                            <p>Créé par : </p><span>Owner</span>
+                        </div>
+                        <div>
+                            <p>Membres : </p>
+                            <div class="membres_imgs"><img src="imgs/profile.jpg" alt=""><img src="imgs/profile.jpg"
+                                    alt=""><img src="imgs/profile.jpg" alt=""><img src="imgs/profile.jpg" alt=""><img
+                                    src="imgs/profile.jpg" alt=""></div>
+                        </div>
+                        <div>
+                            <p>Créé en : </p><span>date</span>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="flex">
+                            <p>Liste de Dépenses : </p><button id="add_depense">+</button>
+                        </div>
+                        <ul>
+                            <li>- dépense 1</li>
+                            <li>- dépense 2</li>
+                            <li>- dépense 1</li>
+                            <li>- dépense 1</li>
+                        </ul>
+                        <div class="flex_item">
+                            <p>Créé par : </p><span>Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_fermer">X</button>
+
+            </form>
+        </div>
+    </main>
+    <div class="modal_ajout_colocation">
+        <form action="#" method="post">
+            <div class="titre_form">Nouvelle Catégorie</div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Titre de Catégorie">
+            </div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Montant Précis">
+            </div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Dépenses">
+            </div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Description (Optionnel)">
+            </div>
+            <div class="btn_champ1_modal">
+                <input type="submit" value="Créer">
+            </div>
+            <button class="btn_fermer">X</button>
+
+        </form>
+    </div>
+
+    <div class="modal_ajout_colocation modal_nouvelle_depense" id="nouvelle_depense">
+        <form action="#" method="post">
+            <div class="titre_form">Nouvelle Dépense</div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Titre de dépense">
+            </div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Montant Précis">
+            </div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Description (Optionnel)">
+            </div>
+            <div class="btn_champ1_modal">
+                <input type="submit" value="Créer">
+            </div>
+            <button class="btn_fermer">X</button>
+
+        </form>
+    </div>
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

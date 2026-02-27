@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil - EcoColoc</title>
+    <link rel="stylesheet" href="css/Dash.css">
+    <link rel="stylesheet" href="css/colocation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body class="body_apresConn">
+    <header>
+        <div class="main_icons">
+            <div><a href="#" class="active"><i class="fa-solid fa-house"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-users"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-bell"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-circle-user"></i></a></div>
+        </div>
+        <div class="darkMenu_icon">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </header>
+    <div class="logo">
+        <div class="logo_imgs">
+            <div><img src="imgs/logo_projet2.png" alt=""></div>
+            <div class="second_img"><img src="imgs/logo_projet.png" alt="">
+                <p>Easy<span>CoLoc</span></p>
+            </div>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Chercher Une Collocation">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <main>
+        <section class="bienvenue_partie">
+            <div class="bienvenue_partie_img">
+                <div class="bienvenue_partie_img_cont"><img src="imgs/profile.jpg" alt=""></div>
+            </div>
+            <div class="bienvenue_partie_msg">
+                <p>Bienvenue <span>Yassmine</span>, Suivez vos dépenses communes, calculez automatiquement les dettes et
+                    gardez une vision claire de qui doit quoi à qui. Fini les calculs manuels et les tensions.</p>
+            </div>
+        </section>
+        <section class="section_colocations">
+            <div class="section_titres">
+                <h2>Les Membres</h2>
+                <button id="ajouter_colocation">+ Ajouter</button>
+            </div>
+            <div class="colocation" id="colocation">
+                <h4>Colocation Titre</h4>
+                <p>Montant</p>
+                <p>Dépenses</p>
+                <p>Membres</p>
+                <p>Date de création</p>
+                <div class="btns_colocation">
+                    <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <button class="details_cat" id="details_cat"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+            </div>
+            <div class="colocation" id="colocation">
+                <h4>Colocation Titre</h4>
+                <p>Montant</p>
+                <p>Dépenses</p>
+                <p>Membres</p>
+                <p>Date de création</p>
+                <div class="btns_colocation">
+                    <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <button class="details_cat" id="details_cat"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+            </div>
+        </section>
+        <div class="modal_ajout_membre" id="modal_ajout_membre">
+            <form action="#" method="post">
+                <div class="titre_form">Inviter Un Amis</div>
+                <div class="contenair_form_inputs">
+                    <div class="champ1_modal ">
+                        <input type="text" placeholder="Adresse Email de votre amis">
+                    </div>
+
+                    <div class="btn_champ1_modal">
+                        <input type="submit" value="Ajouter">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div class="modal_ajout_colocation ajout_colocation" id="modal_ajout_colocation">
+        <form action="#" method="post">
+            <div class="titre_form">Nouvelle Collection</div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Your Name">
+            </div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Your Email">
+            </div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Your Phone">
+            </div>
+            <div class="champ1_modal">
+                <input type="text" placeholder="Your Password">
+            </div>
+            <div class="btn_champ1_modal">
+                <input type="submit" value="SIGN UP">
+            </div>
+            <button class="btn_fermer">X</button>
+
+        </form>
+    </div>
+
+
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
